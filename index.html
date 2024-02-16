@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main">
+      <input id="display" readonly />
+      <div class="head-keys"></div>
+      <div class="container">
+        <button onclick="clearDisplay()">AC</button>
+        <button onclick="clearEntry()">C</button>
+        <button onclick="appendtoDisplay('/')">/</button>
+        <button onclick="appendtoDisplay('*')">*</button>
+        <button onclick="appendtoDisplay('1')">1</button>
+        <button onclick="appendtoDisplay('2')">2</button>
+        <button onclick="appendtoDisplay('3')">3</button>
+        <button onclick="appendtoDisplay('+')">+</button>
+        <button onclick="appendtoDisplay('4')">4</button>
+        <button onclick="appendtoDisplay('5')">5</button>
+        <button onclick="appendtoDisplay('6')">6</button>
+        <button onclick="appendtoDisplay('-')">-</button>
+        <button onclick="appendtoDisplay('7')">7</button>
+        <button onclick="appendtoDisplay('8')">8</button>
+        <button onclick="appendtoDisplay('9')">9</button>
+        <button id="zero" onclick="appendtoDisplay('0')">0</button>
+        <button onclick="appendtoDisplay('.')">.</button>
+        <button id="equall" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
