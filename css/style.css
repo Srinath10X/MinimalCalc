@@ -1,3 +1,34 @@
+:root {
+  --br: 0.5rem;
+  --primary-color: #fefefe;
+  --surface-color: ;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #111111;
+    --surface-one: #1e1e1e;
+    --border: #fefefe;
+  }
+
+  body {
+    background: var(--primary-color);
+  }
+
+  #display {
+    background: var(--surface-one);
+    border: none;
+    color: var(--border);
+  }
+
+  .container button {
+    color: var(--border);
+    background: var(--surface-one);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +49,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 10px solid black;
 }
 
 button:hover {
@@ -26,7 +56,8 @@ button:hover {
 }
 
 #display {
-  border: none;
+  border-radius: var(--br);
+  background: var();
   height: 100px;
   width: 300px;
   margin: 0.5rem;
@@ -52,4 +83,9 @@ button:hover {
 #equall {
   grid-row: 4/6;
   grid-column: 4/4;
+}
+
+.container button {
+  border: none;
+  border-radius: var(--br);
 }
