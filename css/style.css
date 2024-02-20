@@ -1,7 +1,7 @@
 :root {
   --br: 0.5rem;
   --primary-color: #fefefe;
-  --surface-color: ;
+  --surface-one: #e6e6e6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,8 +24,6 @@
   .container button {
     color: var(--border);
     background: var(--surface-one);
-    font-weight: bold;
-    font-size: 1rem;
   }
 }
 
@@ -40,6 +38,10 @@ html,
 body {
   height: 100%;
   width: 100%;
+}
+
+body {
+  background: var(--primary-color);
 }
 
 .main {
@@ -57,7 +59,8 @@ button:hover {
 
 #display {
   border-radius: var(--br);
-  background: var();
+  background: var(--surface-one);
+  border: none;
   height: 100px;
   width: 300px;
   margin: 0.5rem;
@@ -88,4 +91,6 @@ button:hover {
 .container button {
   border: none;
   border-radius: var(--br);
+  font-weight: bold;
+  font-size: 1rem;
 }
